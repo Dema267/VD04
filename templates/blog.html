@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f5f5dc; /* Бежевый фон */
+            color: #000; /* Черный текст */
+        }
+    </style>
+</head>
+<body>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link {{ 'active' if active_page == 'index' else '' }}" href="/">Главная</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link {{ 'active' if active_page == 'blog' else '' }}" href="/blog">Блог</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link {{ 'active' if active_page == 'contacts' else '' }}" href="/contacts">Контакты</a>
+  </li>
+</ul>
+
+
+<div class="container mt-4">
+    <h1>Мой блог</h1>
+    <p>Здесь будут интересные истории.</p><br>"Приветствую всех читателей моего блога! Сегодня я хотел бы поделиться с вами историей о том, как я пришел в программирование, и почему Python стал для меня не просто инструментом, а настоящей страстью.
+Все началось в те далекие времена, когда я впервые столкнулся с компьютером. Я был очарован тем, как кусочки кода превращаются в работающие программы, которые могут выполнять удивительные задачи. Но настоящий толчок к программированию дал один случай. Однажды мой друг показал мне небольшой скрипт на Python, который он написал для автоматизации рутинной задачи. Я был поражен тем, насколько просто и изящно это было сделано. Это было как магия!
+Именно тогда я решил глубже изучить Python. Я начал с простых задач, постепенно переходя к более сложным проектам. Я обнаружил, что Python — это не только язык программирования, но и целая экосистема, которая позволяет решать самые разнообразные задачи: от веб-разработки до анализа данных и машинного обучения.
+Python покорил меня своей лаконичностью и читаемостью. Мне нравится, что он позволяет сосредоточиться на решении проблемы, а не на сложностях синтаксиса. Каждый новый проект для меня — это вызов и возможность учиться чему-то новому.
+Сегодня я с уверенностью могу сказать, что программирование — это не просто моя профессия, это мой образ жизни. Я продолжаю изучать новые технологии и делиться своими знаниями с другими. Надеюсь, моя история вдохновит кого-то из вас начать свой путь в мире программирования. Спасибо, что читаете мой блог и следите за моими проектами!"
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
